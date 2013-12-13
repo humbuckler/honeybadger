@@ -1,0 +1,30 @@
+# script for setting up a new Ubuntu 12.04 based install "the way I like it"
+#
+# Packages to pull from apt-get
+# - emacs gedit git subversion synaptic g++
+# - phoronix test suite
+# - python3 idle3 pip
+# - automake autoconf texinfo libtool
+# - gnome-system-monitor	
+# - filezilla
+# - openssh-server
+# - fail2ban
+
+
+sudo apt-get -y install emacs gedit
+sudo apt-get -y install subversion git
+sudo apt-get -y install synaptic
+sudo apt-get -y install g++ build-essential
+sudo apt-get -y install phoronix-test-suite 
+sudo apt-get -y install python3-dev idle3 python-pip
+sudo apt-get -y install gnome-system-monitor
+sudo apt-get -y install filezilla openssh-server fail2ban
+sudo apt-get -y install python-numpy
+
+#get IEP, my favorite Python IDE
+sudo pip-3.2 install iep
+
+# get anaconda, the Python all-in-one
+
+# get R3.0 and RStudio
+
