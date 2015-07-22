@@ -15,14 +15,12 @@
 
 
 sudo apt-get -y install emacs gedit
-sudo apt-get -y install subversion
-sudo apt-get -y install build-essential
-sudo apt-get -y install phoronix-test-suite 
-sudo apt-get -y install python3-dev idle3 python-pip
-sudo apt-get -y install gnome-system-monitor
-sudo apt-get -y install filezilla fail2ban
-sudo apt-get -y install python-numpy
-
+sudo apt-get -y install filezilla
+sudo apt-get -y install nvidia-current
+sudo apt-get -y install build-essential subversion
+sudo apt-get -y install phoronix-test-suite gnome-system-monitor
+sudo apt-get -y install python3-dev idle3 python-pip python-numpy
+sudo apt-get -y install fail2ban clamav
 
 #get IEP, my favorite Python IDE
 sudo pip-3.2 install iep
