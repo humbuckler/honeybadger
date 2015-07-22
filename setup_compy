@@ -31,3 +31,12 @@ sudo pip-3.2 install iep
 
 # get R3.0 and RStudio
 
+#adding Spark environment in vagrant
+URL='https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb'; FILE=`mktemp`; wget "$URL" -qO $FILE && sudo dpkg -i $FILE; rm $FILE
+mkdir $HOME/myvagrant
+cd $HOME/myvagrant
+wget https://github.com/spark-mooc/mooc-setup/archive/master.zip
+unzip master.zip
+cp mooc-setup-master/Vagrantfile .
+vagrant up --provider=virtualbox
+vagrant halt
